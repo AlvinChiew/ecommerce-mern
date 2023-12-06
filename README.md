@@ -9,6 +9,7 @@
 
 1. `npx create-react-app frontend`
 1. `npm install react-bootstrap bootstrap react-icons`
+1. `npm install react-router-dom react-router-bootstrap`
 
 ## Tips
 

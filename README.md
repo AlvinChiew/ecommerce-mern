@@ -23,12 +23,18 @@
    - entry point: (index.js) server.js
    - "type": "module",
    - "scripts": {"start": "node backend/server.js"},
-   - `npm install express`
-   - `npm install -D nodemon concurrently`
-     - "scripts": {
-       "start:server": "nodemon backend/server.js",
-       "start:client": "npm start --prefix frontend",
-       "dev": "concurrently npm:start:\*"
-       },
-   - `npm install -D dotenv`
-   - `npm install axios`
+1. `npm install express`
+1. `npm install -D nodemon concurrently`
+   - "scripts": {
+     "start:server": "nodemon backend/server.js",
+     "start:client": "npm start --prefix frontend",
+     "dev": "concurrently npm:start:\*"
+     },
+1. `npm install -D dotenv`
+1. `npm install axios`
+1. Setup Mongo
+
+- cluster: EMArt
+- database: emart
+- collection: products
+- get uri/connection string from `cloud.mongodb.com` -> `overview` -> `connect` -> `Drivers`

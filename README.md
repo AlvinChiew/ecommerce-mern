@@ -2,15 +2,33 @@
 
 ## Kickstart
 
-1. `cd frontend`
-2. `npm start`
-
-## Setup
-
-1. `npx create-react-app frontend`
-1. `npm install react-bootstrap bootstrap react-icons`
-1. `npm install react-router-dom react-router-bootstrap`
+1. `npm run dev``
 
 ## Tips
 
 1. react class snippet - type `rafce`
+
+## Setup
+
+### Front-end
+
+1. `npx create-react-app frontend`
+1. `npm install react-bootstrap bootstrap react-icons`
+1. `npm install react-router-dom react-router-bootstrap`
+1. "proxy": "http://localhost:5000"
+
+### Back-end
+
+1. `npm init`
+   - entry point: (index.js) server.js
+   - "type": "module",
+   - "scripts": {"start": "node backend/server.js"},
+   - `npm install express`
+   - `npm install -D nodemon concurrently`
+     - "scripts": {
+       "start:server": "nodemon backend/server.js",
+       "start:client": "npm start --prefix frontend",
+       "dev": "concurrently npm:start:\*"
+       },
+   - `npm install -D dotenv`
+   - `npm install axios`

@@ -33,8 +33,16 @@
 1. `npm install -D dotenv`
 1. `npm install axios`
 1. Setup Mongo
-
-- cluster: EMArt
-- database: emart
-- collection: products
-- get uri/connection string from `cloud.mongodb.com` -> `overview` -> `connect` -> `Drivers`
+   - cluster: EMArt
+   - database: emart
+   - collection: products
+   - get uri/connection string from `cloud.mongodb.com` -> `overview` -> `connect` -> `Drivers`
+   - DB GUI
+     - MongoDB Compass
+       - get uri from `cloud.mongodb.com` -> `overview` -> `connect` -> `Compass`
+     - VSCode ext => MongoDB
+       - get uri from `cloud.mongodb.com` -> `overview` -> `connect` -> `MongoDB for VS Code`
+   - DB Javascript: Mongoose
+     - npm install mongoose
+1. `npm install bcryptjs`
+1. `npm install colors`

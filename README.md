@@ -15,7 +15,7 @@
 1. `npx create-react-app frontend`
 1. `npm install react-bootstrap bootstrap react-icons`
 1. `npm install react-router-dom react-router-bootstrap`
-1. "proxy": "http://localhost:5000"
+1. "proxy": [http://localhost:5000](http://localhost:5000)
 1. `npm install @reduxjs/toolkit react-redux`
 
 ### Back-end

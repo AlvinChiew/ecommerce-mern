@@ -45,5 +45,5 @@
        - get uri from `cloud.mongodb.com` -> `overview` -> `connect` -> `MongoDB for VS Code`
    - DB Javascript: Mongoose
      - npm install mongoose
-1. `npm install bcryptjs`
 1. `npm install colors`
+1. `npm install bcryptjs jsonwebtoken cookie-parser`

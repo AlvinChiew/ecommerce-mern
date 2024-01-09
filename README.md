@@ -18,6 +18,7 @@
 1. "proxy": [http://localhost:5000](http://localhost:5000)
 1. `npm install @reduxjs/toolkit react-redux`
 1. `npm install react-toastify`
+1. `npm install @paypal/react-paypal-js`
 
 ### Back-end
 

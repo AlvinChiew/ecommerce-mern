@@ -11,7 +11,7 @@ import {
   Button,
 } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { useGetProductByIdQuery } from '../slices/productsApiSlice';
+import { useGetProductDetailsQuery } from '../slices/productApiSlice';
 import Rating from '../components/Rating';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
@@ -22,7 +22,11 @@ const ProductScreen = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [qty, setQty] = useState(1);
-  const { data: product, isLoading, error } = useGetProductByIdQuery(productId);
+  const {
+    data: product,
+    isLoading,
+    error,
+  } = useGetProductDetailsQuery(productId);
   const addToCartHandler = () => {
     dispatch(addToCart({ ...product, qty }));
     navigate('/cart');

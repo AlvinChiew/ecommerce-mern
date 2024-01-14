@@ -49,3 +49,4 @@
      - npm install mongoose
 1. `npm install colors`
 1. `npm install bcryptjs jsonwebtoken cookie-parser`
+1. `npm install multer`

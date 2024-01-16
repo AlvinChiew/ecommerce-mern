@@ -19,6 +19,7 @@
 1. `npm install @reduxjs/toolkit react-redux`
 1. `npm install react-toastify`
 1. `npm install @paypal/react-paypal-js`
+1. `npm install react-helmet-async`
 
 ### Back-end
 

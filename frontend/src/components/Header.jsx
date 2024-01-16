@@ -5,6 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { useLogoutMutation } from '../slices/userApiSlice';
 import { logout } from '../slices/authSlice';
+import SearchBox from './SearchBox';
 import logo from '../assets/logo-cropped-small.png';
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const [logoutApi, isLoading] = useLogoutMutation();
+  const [logoutApi] = useLogoutMutation();
 
   const logoutHandler = async () => {
     try {
@@ -36,9 +37,9 @@ const Header = () => {
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
+              <SearchBox />
               <LinkContainer to={'/cart'}>
                 <Nav.Link>
                   <FaShoppingCart /> Cart

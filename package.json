@@ -9,7 +9,8 @@
     "start:client": "npm start --prefix frontend",
     "dev": "concurrently npm:start:*",
     "data:upload": "node backend/seeder.js",
-    "data:destroy": "node backend/seeder.js -d"
+    "data:destroy": "node backend/seeder.js -d",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "alvinchiew",
   "license": "MIT",

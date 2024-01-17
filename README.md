@@ -2,7 +2,36 @@
 
 ## Kickstart
 
-1. `npm run dev``
+### Dev Env
+
+1. `npm run dev`
+
+### Prod Env
+
+1. Set `NODE_ENV=production` in `package.json`
+1. `npm run build`
+1. `npm run start:server`
+
+### Release
+
+1. Deploy Web App @ [render.com](https://render.com/)
+   - Sign up for a free account
+   - Create new Web Service -> Select Github Repository
+     - Build Command: `npm run build`
+     - Start Command: `npm run start:server`
+     - Add Environment Variables from .env
+1. Configure Mongo Atlas network access
+   - IP Address: web service -> Connect -> Outbound IP Addresses
+1. Add Custom Domain Name
+   - Web Service -> Settings -> Add Custom Domains
+   - Add CNAME records (Host: www, Value: RENDER_DOMAIN_NAME) and A record (Host: @, Value: RENDER_IP) in DNS Provider
+   - P.s. Render provides free SSL certificate (via Let's Encrypt) in 10 mins
+
+## Future Study
+
+1. Server side rendering framework - NextJs, Remix
+   - performance & SEO
+1. Static website - JAM stack (JavaScript, APIs, Markup) - Gatsby, Astro
 
 ## Tips
 
